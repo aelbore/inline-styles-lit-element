@@ -1,0 +1,30 @@
+{
+  "name": "inline-styles-lit-element",
+  "version": "1.0.0",
+  "description": "Code examples of lit-element uses external css or scss file with rollup-plugin-inline-lit-element",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "start": "http-server ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aelbore/inline-styles-lit-element.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aelbore/inline-styles-lit-element/issues"
+  },
+  "homepage": "https://github.com/aelbore/inline-styles-lit-element#readme",
+  "devDependencies": {
+    "http-server": "^0.11.1",
+    "lit-element": "^2.1.0",
+    "rollup": "^1.9.0",
+    "rollup-plugin-inline-lit-element": "0.0.1",
+    "rollup-plugin-minify-html-literals": "^1.2.2",
+    "rollup-plugin-node-resolve": "^4.1.0",
+    "rollup-plugin-terser": "^4.0.4"
+  }
+}
