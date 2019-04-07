@@ -4,6 +4,8 @@ Code examples of lit-element uses external css or scss file with rollup-plugin-i
 Installation
 ------------
   ```
+    git clone https://github.com/aelbore/inline-styles-lit-element.git
+    git checkout todo-lit-element
     npm install
   ```
 <br />
