@@ -12,6 +12,10 @@ Build code
   ```
   npm run build
   ```
+Run test
+  ```
+  npm test
+  ```
 Start Application
   ```
   npm start
