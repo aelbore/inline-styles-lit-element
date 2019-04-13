@@ -24,7 +24,7 @@
     "@types/jasmine": "^3.3.12",
     "aria-tools": "0.0.4",
     "lit-element": "^2.1.0",
-    "rollup-plugin-inline-lit-element": "0.0.1",
+    "rollup-plugin-inline-lit-element": "0.0.2",
     "rollup-plugin-minify-html-literals": "^1.2.2"
   }
 }
