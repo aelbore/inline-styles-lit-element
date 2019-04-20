@@ -3,6 +3,7 @@ Code examples of lit-element uses external css or scss file with rollup-plugin-i
 
 ## Examples
 * [ Webpack ](https://github.com/aelbore/inline-styles-lit-element/tree/webpack)
+* [ Parcel ](https://github.com/aelbore/inline-styles-lit-element/tree/parcel)
 * [ Todo App ](https://github.com/aelbore/inline-styles-lit-element/tree/todo-lit-element)
 
 
