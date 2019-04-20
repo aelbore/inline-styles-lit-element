@@ -4,9 +4,8 @@
   "description": "Code examples of lit-element uses external css or scss file with rollup-plugin-inline-lit-element",
   "main": "index.js",
   "scripts": {
-    "build": "rollup -c",
-    "start": "ts-node tools/server.ts",
-    "test": "aria test --extname .spec.js"
+    "clean.dist": "ts-node --project tools/tsconfig.json tools/clean.dist.ts",
+    "start": "npm run clean.dist && parcel public/index.html"
   },
   "repository": {
     "type": "git",
@@ -20,11 +19,15 @@
   },
   "homepage": "https://github.com/aelbore/inline-styles-lit-element#readme",
   "devDependencies": {
-    "@types/express": "^4.16.1",
-    "@types/jasmine": "^3.3.12",
-    "aria-tools": "0.0.4",
+    "@babel/core": "7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "aria-fs": "^0.0.4",
     "lit-element": "^2.1.0",
-    "rollup-plugin-inline-lit-element": "0.0.2",
-    "rollup-plugin-minify-html-literals": "^1.2.2"
-  }
+    "parcel-bundler": "^1.12.3",
+    "parcel-plugin-inline-lit-element": "^0.0.1",
+    "ts-node": "^8.1.0"
+  },
+  "browserslist": [
+    "last 1 chrome versions"
+  ]
 }
