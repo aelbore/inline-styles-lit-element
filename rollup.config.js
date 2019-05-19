@@ -1,7 +1,4 @@
-import minifyHTML from 'rollup-plugin-minify-html-literals';
-import resolve from 'rollup-plugin-node-resolve'
-
-import { terser } from 'rollup-plugin-terser'
+import { minifyHTML, nodeResolve, terser } from 'aria-build'
 import { inlineLitElement } from 'rollup-plugin-inline-lit-element'
 
 export default {
@@ -11,7 +8,7 @@ export default {
   plugins: [
     minifyHTML(),
     inlineLitElement(),
-    resolve(),
+    nodeResolve(),
     terser()
   ],
   output: {

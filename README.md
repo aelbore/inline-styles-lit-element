@@ -26,4 +26,4 @@ Start Application
   ```
   npm start
   ```
-Browse `http://localhost:8080`
+Browse `http://localhost:3000`
