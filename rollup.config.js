@@ -1,9 +1,7 @@
-import minifyHTML from 'rollup-plugin-minify-html-literals';
-import resolve from 'rollup-plugin-node-resolve'
 import bundleSize from 'rollup-plugin-filesize';
 
-import { terser } from 'rollup-plugin-terser'
 import { inlineLitElement } from 'rollup-plugin-inline-lit-element'
+import { terser, minifyHTML, nodeResolve } from 'aria-build'
 
 export default {
   treeshake: true,
@@ -12,7 +10,7 @@ export default {
   plugins: [
     minifyHTML(),
     inlineLitElement(),
-    resolve(),
+    nodeResolve(),
     terser(),
     bundleSize()
   ],
@@ -20,6 +18,6 @@ export default {
     sourcemap: true,
     globals: {},
     file: 'dist/main.js',
-    format: 'esm'
+    format: 'es'
   }
 }
