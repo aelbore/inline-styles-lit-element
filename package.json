@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "rollup -c",
+    "bundle": "ts-node --project tools/tsconfig.json tools/bundle.ts",
     "start": "ts-node tools/server.ts",
     "test": "aria test --extname .spec.js"
   },
