@@ -1,4 +1,4 @@
-import { build, clean, terser, TSRollupConfig, copyReadmeFile, copyPackageFile, renameDtsEntryFile } from 'aria-build'
+import { build, clean, terser, TSRollupConfig, copyReadmeFile, copyPackageFile } from 'aria-build'
 import { inlineLitElement } from 'rollup-plugin-inline-lit-element'
 
 (async function() {
