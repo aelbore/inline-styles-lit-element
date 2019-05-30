@@ -1,4 +1,4 @@
-import { build, clean, terser, TSRollupConfig, copyReadmeFile, copyPackageFile } from 'aria-build'
+import { build, clean, minifyHTML, terser, TSRollupConfig, copyReadmeFile, copyPackageFile } from 'aria-build'
 import { inlineLitElement } from 'rollup-plugin-inline-lit-element'
 
 (async function() {
@@ -26,6 +26,7 @@ import { inlineLitElement } from 'rollup-plugin-inline-lit-element'
       input: './src/hello-world.js',
       plugins: [
         terser(),
+        minifyHTML(),
         inlineLitElement()
       ],
       output: {
@@ -38,6 +39,7 @@ import { inlineLitElement } from 'rollup-plugin-inline-lit-element'
       input: './src/hello-world.js',
       plugins: [
         terser(),
+        minifyHTML(),
         inlineLitElement()
       ],
       output: {
