@@ -1,4 +1,4 @@
-import { build, clean, minifyHTML, terser, TSRollupConfig, copyReadmeFile, copyPackageFile } from 'aria-build'
+import { clean, minifyHTML, terser, TSRollupConfig, bundle } from 'aria-build'
 import { inlineLitElement } from 'rollup-plugin-inline-lit-element'
 
 (async function() {
@@ -15,11 +15,6 @@ import { inlineLitElement } from 'rollup-plugin-inline-lit-element'
       output: {
         format: 'es',
         file: './dist/hello-world.es.js'
-      },
-      tsconfig: {
-        compilerOptions: {
-          declaration: true
-        }
       }
     },
     {
@@ -51,13 +46,6 @@ import { inlineLitElement } from 'rollup-plugin-inline-lit-element'
     }
   ]
 
-  const pkgOptions = {
-    main: 'hello-world.js',
-    typings: 'hello-world.d.ts',
-    module: 'hello-world.es.js'
-  }
-
   await clean('dist')
-  await build(options)
-  await Promise.all([ copyReadmeFile(), copyPackageFile(pkgOptions) ])
+  await bundle(options)
 })()

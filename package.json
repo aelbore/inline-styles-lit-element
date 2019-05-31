@@ -1,5 +1,5 @@
 {
-  "name": "inline-styles-lit-element",
+  "name": "hello-world",
   "version": "1.0.0",
   "description": "Code examples of lit-element uses external css or scss file with rollup-plugin-inline-lit-element",
   "main": "index.js",
