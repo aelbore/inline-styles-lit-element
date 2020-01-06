@@ -1,6 +1,7 @@
-
 import { inlineLitElement } from 'rollup-plugin-inline-lit-element'
 import { minifyHTML, terser } from 'aria-build'
+
+const filesize = require('rollup-plugin-filesize')
 
 export default {
   plugins: [
@@ -17,6 +18,9 @@ export default {
       output: {
         comments: false
       }
+    }),
+    filesize({
+      showBrotliSize: true,
     })
   ]
 }
