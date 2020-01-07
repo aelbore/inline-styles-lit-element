@@ -1,7 +1,8 @@
-import { LitElement, html } from 'lit-element';
+import { LitElement, html, customElement } from 'lit-element';
 import './todo-input.css'
 
-export default class TodoInput extends LitElement {
+@customElement('todo-input')
+export class TodoInput extends LitElement {
 		
 	constructor() {
 		super();

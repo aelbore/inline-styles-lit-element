@@ -5,23 +5,27 @@ import { minifyHTML, terser } from 'aria-build'
 const filesize = require('rollup-plugin-filesize')
 
 export default {
-  plugins: [
-    inlineLitElement(),
-    minifyHTML(),
-    terser({
-      module: true,
-      warnings: true,
-      mangle: {
-        properties: {
-          regex: /^__/,
+  plugins: {
+    before: [
+      inlineLitElement(),
+      minifyHTML()
+    ],
+    after: [
+      terser({
+        module: true,
+        warnings: true,
+        mangle: {
+          properties: {
+            regex: /^__/,
+          }
+        },
+        output: {
+          comments: false
         }
-      },
-      output: {
-        comments: false
-      }
-    }),
-    filesize({
-      showBrotliSize: true,
-    })
-  ]
+      }),
+      filesize({
+        showBrotliSize: true,
+      })
+    ]
+  }
 }

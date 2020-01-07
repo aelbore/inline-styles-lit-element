@@ -1,7 +1,8 @@
-import { LitElement, html } from 'lit-element';
+import { LitElement, html, customElement } from 'lit-element';
 import './my-todo.css'
 
-export default class MyTodo extends LitElement {
+@customElement('my-todo')
+export class MyTodo extends LitElement {
 	
 	constructor() {
 		super();

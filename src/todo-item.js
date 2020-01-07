@@ -1,15 +1,17 @@
-import { LitElement, html } from 'lit-element';
+import { LitElement, html, customElement, property } from 'lit-element';
 import './todo-item.css'
 
-export default class TodoItem extends LitElement {
+@customElement('todo-item')
+export class TodoItem extends LitElement {
 
-	static get properties() {
-		return {
-			text: { type: String },
-			checked: { type: Boolean, attrName: 'checked' },
-			index: { type: Number },
-		};
-	}
+	@property({ type: String }) 
+	text
+	
+	@property({ type: Boolean, attrName: 'checked' }) 
+	checked
+	
+	@property({ type: Number }) 
+	index
 
 	constructor() {
 		super();

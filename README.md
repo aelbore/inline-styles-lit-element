@@ -5,7 +5,7 @@ Installation
 ------------
   ```
     git clone https://github.com/aelbore/inline-styles-lit-element.git
-    git checkout todo-lit-element
+    git checkout todo-lit-element-decorators
     npm install
   ```
 <br />
