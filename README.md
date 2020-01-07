@@ -12,7 +12,9 @@ Installation
 
 Build code
   ```
-  npm run build
+  npm run build 
+  or 
+  npm run aria-build
   ```
 Start Application
   ```
