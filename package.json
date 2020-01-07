@@ -24,9 +24,9 @@
     "@types/express": "^4.16.1",
     "aria-build": "0.0.23",
     "express": "^4.17.1",
-    "lit-element": "^2.1.0",
+    "lit-element": "^2.2.1",
     "rollup-plugin-filesize": "^6.2.1",
-    "rollup-plugin-inline-lit-element": "^0.0.5",
+    "rollup-plugin-inline-lit-element": "^0.0.6",
     "typescript": "^3.7.4"
   }
 }
