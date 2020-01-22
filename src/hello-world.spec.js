@@ -1,11 +1,19 @@
+import { assert } from 'chai'
+
 import './hello-world'
 
 describe('HelloWorld', () => {
-  let element;
+  let element
 
-  beforeEach(() => {
-    element = document.createElement('hello-world')
-    document.body.appendChild(element)
+  async function createElement(element) {
+    const el = document.createElement(element)
+    document.body.appendChild(el)
+    await el.updateComplete
+    return el;
+  }
+
+  beforeEach(async() => {
+    element = await createElement('hello-world')
   })
 
   afterEach(() => {
@@ -13,17 +21,15 @@ describe('HelloWorld', () => {
   })
 
   it('should have element', () => {
-    expect(element).toBeDefined()
+    assert.ok(element)
   })
 
-  it('should have shadowRoot.', () => {
-    expect(element.shadowRoot).toBeDefined()
+  it('should have shadowRoot', () => {
+    assert.ok(element.shadowRoot)
   })
 
-  it('should have styles static get accessor', () => {
-    const style = element.shadowRoot.querySelector('style');
-    
-    expect(style).toBeDefined()
+  it('should have h1 element', () => {
+    assert.ok(element.shadowRoot.querySelector('h1'))
   })
 
 })
