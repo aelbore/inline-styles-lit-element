@@ -7,7 +7,7 @@
     "rollup": "rollup -c",
     "build": "aria-build -f es -i ./src/hello-world.js --sourcemap",
     "start": "ts-node tools/server.ts",
-    "test": "aria test --browser --check-coverage"
+    "test": "aria test --browser --resolve --check-coverage"
   },
   "repository": {
     "type": "git",
