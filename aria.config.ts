@@ -22,5 +22,10 @@ export default {
     filesize({
       showBrotliSize: true,
     })
-  ]
+  ],
+  test: {
+    plugins: [ 
+      inlineLitElement() 
+    ]
+  }
 }

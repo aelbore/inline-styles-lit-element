@@ -22,4 +22,9 @@ Start Application
   ```
   npm start
   ```
+Test
+  ```
+  npm test
+  ```
+
 Browse `http://localhost:3000`
