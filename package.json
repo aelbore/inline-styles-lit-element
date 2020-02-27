@@ -4,16 +4,21 @@
   "description": "Code examples of lit-element uses external css or scss file with rollup-plugin-inline-lit-element",
   "main": "index.js",
   "scripts": {
-    "aria-fs": "aria-fs",
-    "build": "aria-fs clean dist && rollup -c",
-    "aria-build": "aria-build -f es --sourcemap",
+    "rollup": "rollup -c",
+    "build": "aria-build -f es --sourcemap",
     "start": "ts-node tools/server.ts"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aelbore/inline-styles-lit-element.git"
   },
-  "keywords": [],
+  "keywords": [
+    "todo",
+    "lit-element",
+    "lit-html",
+    "webcomponents",
+    "custom-elements"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -21,12 +26,13 @@
   },
   "homepage": "https://github.com/aelbore/inline-styles-lit-element#readme",
   "devDependencies": {
-    "@types/express": "^4.16.1",
-    "aria-build": "0.0.23",
+    "@types/express": "^4.17.2",
+    "aria-build": "^0.2.0",
+    "aria-fs": "^0.2.0",
     "express": "^4.17.1",
     "lit-element": "^2.2.1",
     "rollup-plugin-filesize": "^6.2.1",
-    "rollup-plugin-inline-lit-element": "^0.0.7",
-    "typescript": "^3.7.4"
+    "rollup-plugin-inline-lit-element": "^0.1.0",
+    "typescript": "^3.8.2"
   }
 }
