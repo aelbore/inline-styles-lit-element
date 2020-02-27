@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --mode production",
     "start": "ts-node tools/server.ts",
-    "test": "aria test --extname .spec.js"
+    "test": "aria-mocha --browser --check-coverage"
   },
   "repository": {
     "type": "git",
@@ -20,12 +20,14 @@
   },
   "homepage": "https://github.com/aelbore/inline-styles-lit-element#readme",
   "devDependencies": {
-    "aria-tools": "0.0.4",
-    "inline-lit-element-loader": "0.0.1",
-    "lit-element": "^2.1.0",
-    "lit-element-transpiler": "0.0.1",
-    "terser-webpack-plugin": "^1.2.3",
-    "webpack": "^4.30.0",
-    "webpack-cli": "^3.3.0"
+    "aria-build": "0.2.0",
+    "aria-fs": "^0.2.0",
+    "express": "^4.17.1",
+    "inline-lit-element-loader": "0.1.0",
+    "lit-element": "^2.2.1",
+    "terser-webpack-plugin": "^2.3.5",
+    "typescript": "^3.8.2",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
   }
 }
