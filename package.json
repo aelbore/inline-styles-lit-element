@@ -22,14 +22,14 @@
   "homepage": "https://github.com/aelbore/inline-styles-lit-element#readme",
   "devDependencies": {
     "@types/express": "^4.17.2",
-    "aria-build": "^0.1.0",
-    "aria-fs": "^0.1.0",
-    "aria-mocha": "^0.1.0",
-    "aria-mocha-headless": "^0.1.0",
+    "aria-build": "^0.2.0",
+    "aria-fs": "^0.2.0",
+    "aria-mocha": "^0.2.0",
+    "aria-mocha-headless": "^0.2.0",
     "express": "^4.17.1",
     "lit-element": "^2.2.1",
     "rollup-plugin-filesize": "^6.2.1",
-    "rollup-plugin-inline-lit-element": "^0.0.7",
-    "typescript": "^3.7.4"
+    "rollup-plugin-inline-lit-element": "^0.1.0",
+    "typescript": "^3.8.2"
   }
 }
